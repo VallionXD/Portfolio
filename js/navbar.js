@@ -7,7 +7,7 @@ const platforms = document.querySelector("ul.flex > li:nth-child(4) > a");
 
 // Link classes.
 const linkClasses = {
-    selected: "block py-2 px-3 text-white rounded transition duration-300 border-zinc-700 hover:bg-zinc-700 hover:text-zinc-500 md:hover:bg-transparent md:hover:text-zinc-500 md:p-0 grayscale select-none selected",
+    selected: "block py-2 px-3 text-zinc-400 rounded transition duration-300 border-zinc-700 hover:bg-zinc-700 hover:text-zinc-500 md:hover:bg-transparent md:hover:text-zinc-500 md:p-0 grayscale select-none selected",
     notSelected: "block py-2 px-3 text-white rounded transition duration-300 border-zinc-700 hover:bg-zinc-700 hover:text-zinc-500 md:hover:bg-transparent md:hover:text-zinc-500 md:p-0 grayscale select-none",
 }
 
