@@ -3,12 +3,12 @@ const contentContainer = document.querySelector(".z-10");
 const about = document.querySelector("ul.flex > li:nth-child(1) > a");
 const interests = document.querySelector("ul.flex > li:nth-child(2) > a");
 const projects = document.querySelector("ul.flex > li:nth-child(3) > a");
-const platforms =  document.querySelector("ul.flex > li:nth-child(4) > a");
+const platforms = document.querySelector("ul.flex > li:nth-child(4) > a");
 
 // Link classes.
 const linkClasses = {
-    selected: "block py-2 px-3 text-zinc-900 rounded transition duration-300 hover:bg-zinc-100 hover:text-zinc-500 md:hover:bg-transparent md:hover:text-zinc-500 md:p-0 dark:text-zinc-400 dark:hover:bg-zinc-700 dark:hover:text-zinc-500 md:dark:hover:bg-transparent dark:border-zinc-700 grayscale select-none selected",
-    notSelected: "block py-2 px-3 text-zinc-900 rounded transition duration-300 hover:bg-zinc-100 hover:text-zinc-500 md:hover:bg-transparent md:hover:text-zinc-500 md:p-0 dark:text-white dark:hover:bg-zinc-700 dark:hover:text-zinc-500 md:dark:hover:bg-transparent dark:border-zinc-700 grayscale select-none",
+    selected: "block py-2 px-3 text-white rounded transition duration-300 border-zinc-700 hover:bg-zinc-700 hover:text-zinc-500 md:hover:bg-transparent md:hover:text-zinc-500 md:p-0 grayscale select-none selected",
+    notSelected: "block py-2 px-3 text-white rounded transition duration-300 border-zinc-700 hover:bg-zinc-700 hover:text-zinc-500 md:hover:bg-transparent md:hover:text-zinc-500 md:p-0 grayscale select-none",
 }
 
 // Link styles.
@@ -33,7 +33,7 @@ const showSection = (sectionName) => {
                     <span class="mb-3 text-2xl text-neutral-500 dark:text-neutral-400">Hi, I am <span class="font-bold bg-gradient-to-r from-zinc-400 via-zinc-600 to-zinc-800 text-transparent bg-clip-text bg-300%" style="text-shadow: rgba(249,249,249,0.35) 0px 0px 15px;">VallionXD</span>. I am a web developer learning <span class="font-bold bg-gradient-to-r from-green-400 via-green-700 to-green-700 text-transparent bg-clip-text bg-300%" style="text-shadow: rgba(9,249,149,0.45) 0px 0px 15px;">NodeJS</span> and <span class="font-bold bg-gradient-to-r from-blue-400 via-sky-700 to-sky-700 text-transparent bg-clip-text bg-300%" style="text-shadow: rgba(9,149,249,0.45) 0px 0px 15px;">ElectronJS</span> for making my web projects into desktop apps. I am also learning <span class="font-bold bg-gradient-to-r from-zinc-400 via-blue-300 to-blue-400 text-transparent bg-clip-text bg-300%" style="text-shadow: rgba(9, 205, 249, 0.45) 0px 0px 15px;">Tailwind CSS</span> for ease of styling my projects.</span>
                 </div>
             </section>
-            `; 
+            `;
 
             // Set the new currently selected.
             currentlySelected = "about";
@@ -48,9 +48,7 @@ const showSection = (sectionName) => {
             platforms.classList = linkClasses.notSelected;
             platforms.style = linkStyles.notSelected;
         }
-    }
-
-    else if (sectionName === "interests") {
+    } else if (sectionName === "interests") {
         if (currentlySelected !== sectionName) {
             // Set the innerHTML.
             contentContainer.innerHTML = `            
@@ -75,9 +73,7 @@ const showSection = (sectionName) => {
             platforms.classList = linkClasses.notSelected;
             platforms.style = linkStyles.notSelected;
         }
-    }
-
-    else if (sectionName === "projects") {
+    } else if (sectionName === "projects") {
         if (currentlySelected !== sectionName) {
             // Set the innerHTML.
             contentContainer.innerHTML = `            
@@ -85,8 +81,8 @@ const showSection = (sectionName) => {
             <section id="projects" class="h-screen z-1 snap-center flex justify-center snap-start">
                 <div class="relative text-center max-w-lg mr-0 snap-start">
                     <div class="relative overflow-x-auto">
-                        <table class="w-full rounded-lg text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                            <thead class="rounded-lg text-xs text-gray-700 uppercase bg-transparent dark:bg-semiTransparent backdrop-blur-sm dark:text-gray-400">
+                        <table class="w-full rounded-lg text-sm text-left rtl:text-right text-gray-400">
+                            <thead class="rounded-lg text-xs text-gray-400 uppercase bg-semiTransparent backdrop-blur-sm">
                                 <tr>
                                     <th scope="col" class="px-6 py-3">
                                         Repository Name
@@ -103,8 +99,8 @@ const showSection = (sectionName) => {
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="bg-white dark:bg-semiTransparent2">
-                                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                <tr class="bg-semiTransparent2">
+                                <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap">
                                         BrowserCheats
                                     </th>
                                     <td class="px-6 py-4">
@@ -117,8 +113,8 @@ const showSection = (sectionName) => {
                                         <a href="https://github.com/VallionXD/BrowserCheats" target="#" class="text-blue-400 font-bold" style="text-shadow: rgba(9, 205, 249, 0.45) 0px 0px 15px;">Link</a>
                                     </td>
                                 </tr>
-                                <tr class="bg-white dark:bg-semiTransparent2">
-                                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                <tr class="bg-semiTransparent2">
+                                <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap">
                                         Val's Rule
                                     </th>
                                     <td class="px-6 py-4">
@@ -131,8 +127,8 @@ const showSection = (sectionName) => {
                                       <a href="https://github.com/VallionXD/Vals-Rule" target="#" class="text-blue-400 font-bold" style="text-shadow: rgba(9, 205, 249, 0.45) 0px 0px 15px;">Link</a>
                                     </td>
                                 </tr>
-                                <tr class="bg-white dark:bg-semiTransparent2">
-                                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                <tr class="bg-semiTransparent2">
+                                    <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap">
                                         Hello World
                                     </th>
                                     <td class="px-6 py-4">
@@ -166,9 +162,7 @@ const showSection = (sectionName) => {
             platforms.classList = linkClasses.notSelected;
             platforms.style = linkStyles.notSelected;
         }
-    }
-
-    else if (sectionName === "platforms") {
+    } else if (sectionName === "platforms") {
         if (currentlySelected !== sectionName) {
             // Set the innerHTML.
             contentContainer.innerHTML = `            

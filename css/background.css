@@ -21,7 +21,7 @@ body {
     --speed: 100s;
     --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
     margin-top: 25vh;
-    margin-left: 35vw;
+    margin-left: 37.35vw;
     width: var(--size);
     height: var(--size);
     filter: blur(1000rem) grayscale(15%);
