@@ -11,6 +11,12 @@ const linkClasses = {
     notSelected: "block py-2 px-3 text-zinc-900 rounded transition duration-300 hover:bg-zinc-100 hover:text-zinc-500 md:hover:bg-transparent md:hover:text-zinc-500 md:p-0 dark:text-white dark:hover:bg-zinc-700 dark:hover:text-zinc-500 md:dark:hover:bg-transparent dark:border-zinc-700 grayscale select-none",
 }
 
+// Link styles.
+const linkStyles = {
+    selected: "text-shadow: rgba(249,249,249,0.35) 0px 0px 15px;",
+    notSelected: "",
+}
+
 // Set the currently selected section.
 let currentlySelected = "about";
 
@@ -24,7 +30,7 @@ const showSection = (sectionName) => {
             <!-- #about -->
             <section id="about" class="h-screen z-1 snap-center flex justify-center snap-start">
                 <div class="relative text-center max-w-lg mr-0  snap-start">
-                    <span class="mb-3 text-2xl text-neutral-500 dark:text-neutral-400">Hi, I am <span class="font-bold bg-gradient-to-r from-zinc-400 via-zinc-600 to-green-700 text-transparent bg-clip-text bg-300%">VallionXD</span>. I am a web developer learning <span class="font-bold bg-gradient-to-r from-green-400 via-green-700 to-green-700 text-transparent bg-clip-text bg-300%">NodeJS</span> and <span class="font-bold bg-gradient-to-r from-blue-400 via-sky-700 to-sky-700 text-transparent bg-clip-text bg-300%">ElectronJS</span>  for making my web projects into desktop apps. I am also learning <span class="font-bold bg-gradient-to-r from-zinc-400 via-blue-300 to-blue-400 text-transparent bg-clip-text bg-300%">Tailwind CSS</span> for ease of styling my projects.</span>
+                    <span class="mb-3 text-2xl text-neutral-500 dark:text-neutral-400">Hi, I am <span class="font-bold bg-gradient-to-r from-zinc-400 via-zinc-600 to-zinc-800 text-transparent bg-clip-text bg-300%" style="text-shadow: rgba(249,249,249,0.35) 0px 0px 15px;">VallionXD</span>. I am a web developer learning <span class="font-bold bg-gradient-to-r from-green-400 via-green-700 to-green-700 text-transparent bg-clip-text bg-300%" style="text-shadow: rgba(9,249,149,0.45) 0px 0px 15px;">NodeJS</span> and <span class="font-bold bg-gradient-to-r from-blue-400 via-sky-700 to-sky-700 text-transparent bg-clip-text bg-300%" style="text-shadow: rgba(9,149,249,0.45) 0px 0px 15px;">ElectronJS</span> for making my web projects into desktop apps. I am also learning <span class="font-bold bg-gradient-to-r from-zinc-400 via-blue-300 to-blue-400 text-transparent bg-clip-text bg-300%" style="text-shadow: rgba(9, 205, 249, 0.45) 0px 0px 15px;">Tailwind CSS</span> for ease of styling my projects.</span>
                 </div>
             </section>
             `; 
@@ -34,9 +40,13 @@ const showSection = (sectionName) => {
 
             // Change the selected link.
             about.classList = linkClasses.selected;
+            about.style = linkStyles.selected;
             interests.classList = linkClasses.notSelected;
+            interests.style = linkStyles.notSelected;
             projects.classList = linkClasses.notSelected;
+            projects.style = linkStyles.notSelected;
             platforms.classList = linkClasses.notSelected;
+            platforms.style = linkStyles.notSelected;
         }
     }
 
@@ -47,7 +57,7 @@ const showSection = (sectionName) => {
             <!-- #interests -->
             <section id="interests" class="h-screen z-1 snap-center flex justify-center snap-start">
                 <div class="relative text-center max-w-lg mr-0 snap-start">
-                    <span class="mb-3 text-2xl text-neutral-500 dark:text-neutral-400">I have interests in writing <span class="font-bold bg-gradient-to-r from-orange-300 via-amber-400 to-amber-500 text-transparent bg-clip-text bg-300%">JavaScript</span> code, and creating web applications using <span class="font-bold bg-gradient-to-r from-orange-400 via-orange-600 to-orange-700 text-transparent bg-clip-text bg-300%">HTML</span>. I also have interests in interface design, which is why I am learning <span class="font-bold bg-gradient-to-r from-zinc-400 via-blue-300 to-blue-400 text-transparent bg-clip-text bg-300%">Tailwind CSS</span>.</span>
+                    <span class="mb-3 text-2xl text-neutral-500 dark:text-neutral-400">I have interests in writing <span class="font-bold bg-gradient-to-r from-orange-300 via-amber-400 to-amber-500 text-transparent bg-clip-text bg-300%" style="text-shadow: rgba(249,249,9,0.45) 0px 0px 15px;">JavaScript</span> code, and creating web applications using <span class="font-bold bg-gradient-to-r from-orange-400 via-orange-600 to-orange-700 text-transparent bg-clip-text bg-300%" style="text-shadow: rgba(255,149,9,0.55) 0px 0px 15px;">HTML</span>. I also have interests in interface design, which is why I am learning <span class="font-bold bg-gradient-to-r from-zinc-400 via-blue-300 to-blue-400 text-transparent bg-clip-text bg-300%" style="text-shadow: rgba(9, 205, 249, 0.45) 0px 0px 15px;">Tailwind CSS</span>.</span>
                 </div>
             </section>
             `;
@@ -57,9 +67,13 @@ const showSection = (sectionName) => {
 
             // Change the selected link.
             about.classList = linkClasses.notSelected;
+            about.style = linkStyles.notSelected;
             interests.classList = linkClasses.selected;
+            interests.style = linkStyles.selected;
             projects.classList = linkClasses.notSelected;
+            projects.style = linkStyles.notSelected;
             platforms.classList = linkClasses.notSelected;
+            platforms.style = linkStyles.notSelected;
         }
     }
 
@@ -100,7 +114,7 @@ const showSection = (sectionName) => {
                                         JavaScript
                                     </td>
                                     <td class="px-6 py-4">
-                                        <a href="https://github.com/VallionXD/BrowserCheats" target="#" class="text-blue-400 font-bold">Link</a>
+                                        <a href="https://github.com/VallionXD/BrowserCheats" target="#" class="text-blue-400 font-bold" style="text-shadow: rgba(9, 205, 249, 0.45) 0px 0px 15px;">Link</a>
                                     </td>
                                 </tr>
                                 <tr class="bg-white dark:bg-semiTransparent2">
@@ -114,7 +128,7 @@ const showSection = (sectionName) => {
                                         JavaScript
                                     </td>
                                     <td class="px-6 py-4">
-                                      <a href="https://github.com/VallionXD/Vals-Rule" target="#" class="text-blue-400 font-bold">Link</a>
+                                      <a href="https://github.com/VallionXD/Vals-Rule" target="#" class="text-blue-400 font-bold" style="text-shadow: rgba(9, 205, 249, 0.45) 0px 0px 15px;">Link</a>
                                     </td>
                                 </tr>
                                 <tr class="bg-white dark:bg-semiTransparent2">
@@ -128,7 +142,7 @@ const showSection = (sectionName) => {
                                         Multiple
                                     </td>
                                     <td class="px-6 py-4">
-                                        <a href="https://github.com/VallionXD/Hello-World" target="#" class="text-blue-400 font-bold">Link</a>
+                                        <a href="https://github.com/VallionXD/Hello-World" target="#" class="text-blue-400 font-bold" style="text-shadow: rgba(9, 205, 249, 0.45) 0px 0px 15px;">Link</a>
                                     </td>
                                 </tr>
                             </tbody>
@@ -144,9 +158,13 @@ const showSection = (sectionName) => {
 
             // Change the selected link.
             about.classList = linkClasses.notSelected;
+            about.style = linkStyles.notSelected;
             interests.classList = linkClasses.notSelected;
+            interests.style = linkStyles.notSelected;
             projects.classList = linkClasses.selected;
+            projects.style = linkStyles.selected;
             platforms.classList = linkClasses.notSelected;
+            platforms.style = linkStyles.notSelected;
         }
     }
 
@@ -157,7 +175,7 @@ const showSection = (sectionName) => {
             <!-- #platforms -->
             <section id="platforms" class="h-screen z-1 snap-center flex justify-center snap-start">
                 <div class="relative text-center max-w-lg mr-0  snap-start">
-                    <span class="mb-3 text-xl text-neutral-500 dark:text-neutral-400">You can find me on <a href="https://pastebin.com/u/VallionXD" target="#" class="font-bold bg-gradient-to-r from-zinc-300 via-zinc-600 to-zinc-400 text-transparent bg-clip-text bg-300%">Pastebin</a> by clicking the pastebin text, <a href="https://github.com/VallionXD" target="#" class="font-bold bg-gradient-to-r from-zinc-400 via-zinc-500 to-zinc-500 text-transparent bg-clip-text bg-300%">GitHub</a> by clicking the button in the top left or the github text.</span>
+                    <span class="mb-3 text-xl text-neutral-500 dark:text-neutral-400">You can find me on <a href="https://pastebin.com/u/VallionXD" target="#" class="font-bold bg-gradient-to-r from-zinc-300 via-zinc-600 to-zinc-400 text-transparent bg-clip-text bg-300%" style="text-shadow: rgba(249,249,249,0.35) 0px 0px 15px;">Pastebin</a> by clicking the pastebin text, <a href="https://github.com/VallionXD" target="#" class="font-bold bg-gradient-to-r from-zinc-400 via-zinc-500 to-zinc-500 text-transparent bg-clip-text bg-300%" style="text-shadow: rgba(249,249,249,0.35) 0px 0px 15px;">GitHub</a> by clicking the button in the top left or the github text.</span>
                 </div>
             </section>
             `;
@@ -167,9 +185,13 @@ const showSection = (sectionName) => {
 
             // Change the selected link.
             about.classList = linkClasses.notSelected;
+            about.style = linkStyles.notSelected;
             interests.classList = linkClasses.notSelected;
+            interests.style = linkStyles.notSelected;
             projects.classList = linkClasses.notSelected;
+            projects.style = linkStyles.notSelected;
             platforms.classList = linkClasses.selected;
+            platforms.style = linkStyles.selected;
         }
     };
 
