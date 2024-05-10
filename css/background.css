@@ -25,11 +25,8 @@ body {
     width: var(--size);
     height: var(--size);
     filter: blur(100px) grayscale(15%);
-    -webkit-filter: blur(100px) grayscale(15%);
     opacity: 0.25;
-    background-image: linear-gradient(#37eba9, #5b37eb);
-    background-image: -webkit-linear-gradient(#37eba9, #5b37eb);
-    background-image: -moz-linear-gradient(#37eba9, #5b37eb);
+    background-image: linear-gradient(#37eba9, #5b37eb);    
     animation: rotate var(--speed) var(--easing) alternate linear infinite;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     z-index: -1;
