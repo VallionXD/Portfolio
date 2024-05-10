@@ -11,12 +11,12 @@ body {
 }
 
 .gradient {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    place-content: center;
-    align-items: center;
-    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
     --size: 350px;
     --speed: 100s;
     --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
