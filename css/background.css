@@ -24,9 +24,9 @@ body {
     margin-left: 37.35vw;
     width: var(--size);
     height: var(--size);
-    filter: blur(1000rem) grayscale(15%);
-    -webkit-filter: blur(1000rem) grayscale(15%);
-    opacity: 0.15;
+    filter: blur(100px) grayscale(15%);
+    -webkit-filter: blur(100px) grayscale(15%);
+    opacity: 0.25;
     background-image: linear-gradient(#37eba9, #5b37eb);
     background-image: -webkit-linear-gradient(#37eba9, #5b37eb);
     background-image: -moz-linear-gradient(#37eba9, #5b37eb);
