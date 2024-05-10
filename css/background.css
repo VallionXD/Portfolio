@@ -17,7 +17,7 @@ body {
     place-content: center;
     align-items: center;
     overflow: hidden;
-    --size: 150px;
+    --size: 350px;
     --speed: 100s;
     --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
     margin-top: 25vh;
@@ -26,7 +26,7 @@ body {
     height: var(--size);
     filter: blur(100px) grayscale(15%);
     opacity: 0.25;
-    background-image: linear-gradient(#37eba9, #5b37eb);    
+    background-image: linear-gradient(#37eba9, #5b37eb);
     animation: rotate var(--speed) var(--easing) alternate linear infinite;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     z-index: -1;
@@ -41,7 +41,32 @@ body {
     }
 }
 
-@media (min-width: 720px) {
+/* Adjust the position and size for smaller screens */
+@media (max-width: 1600px) {
+    .gradient {
+        margin-left: 35vw;
+    }
+}
+
+@media (max-width: 1450px) {
+    .gradient {
+        margin-left: 32.5vw;
+    }
+}
+
+@media (max-width: 1025px) {
+    .gradient {
+        margin-left: 26vw;
+    }
+}
+
+@media (max-width: 719px) {
+    .gradient {
+        margin-left: 25vw;
+    }
+}
+
+@media (min-width: 767px) {
     .gradient {
         --size: 500px;
     }
